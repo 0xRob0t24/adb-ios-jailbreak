@@ -2,25 +2,17 @@
 มันจะมีไลบรารีที่ไม่ได้รวมต้องไปรวมเองอยู่ 1 ไฟล์
 
 
+cd lib/base
 
+แล้ว c++ -Iinclude -c quick_exit.cpp -o quick_exit.o
 
+แล้วกลับมาที่pathหลัก  ไปที่ src
 
+ar rcs ../lib/.libs/libbase.a ../lib/base/quick_exit.o
 
-เข้าที่ src เพื่อคอมไพล์
+รวมเสร็จแล้ว
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+คอมไพล์
 
 
 
