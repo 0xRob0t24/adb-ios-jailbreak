@@ -1,0 +1,31 @@
+
+มันจะมีไลบรารีที่ไม่ได้รวมต้องไปรวมเองอยู่ 1 ไฟล์
+
+
+
+
+
+
+เข้าที่ src เพื่อคอมไพล์
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c++ -I/usr/local/include -I../include -I../lib/base/include -I../lib/libcrypto_utils/include -std=c++14 -DADB_HOST=1 -DHAVE_FORKEXEC=1 -DHAVE_SYMLINKS -DHAVE_TERMIO_H -DHAVE_SYS_SOCKET_H -DHAVE_OFF64_T -D_GNU_SOURCE -D_XOPEN_SOURCE -DHAVE_ANDROID_OS=1 -DADB_VERSION=\"x.x-x\" -DADB_HOST_ON_TARGET=1 -DALLOW_ADBD_ROOT=1 -DWORKAROUND_BUG6558362 -DFAKE_LOG_DEVICE=1 -DDONT_USE_LIBUSB -DDONT_USE_MDNS -g -O2 -o adb adb-adb.o adb-adb_auth_host.o adb-adb_client.o adb-adb_io.o adb-adb_listeners.o adb-adb_trace.o adb-adb_utils.o adb-bugreport.o client/adb-main.o client/adb-usb_dispatch.o client/adb-usb_linux.o adb-commandline.o adb-console.o adb-diagnose_usb.o adb-fdevent.o adb-file_sync_client.o adb-line_printer.o adb-shell_service_protocol.o adb-services.o adb-sockets.o adb-socket_spec.o adb-sysdeps_unix.o sysdeps/adb-errno.o sysdeps/posix/adb-network.o adb-transport.o adb-transport_local.o adb-transport_usb.o -Wl,-bind_at_load -lpthread -L/usr/local/lib ../lib/.libs/libbase.a ../lib/.libs/libcrypto_utils.a ../lib/.libs/libcutils.a ../lib/.libs/liblog.a -lcrypto -lssl -framework CoreFoundation -framework IOKit -lvroot -Ltbdfiles
+
+
+
+
